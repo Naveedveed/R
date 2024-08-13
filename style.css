@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+/* Hero Section */
+.hero {
+    background: #007bff;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero a.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* Overview Section */
+.overview {
+    background: #ffffff;
+    padding: 50px 0;
+}
+
+.overview h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.overview p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.overview a.btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+
+/* Section Headers */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Admission Page Styles */
+.admission-procedure ul, .admission-procedure ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.admission-procedure li {
+    margin-bottom: 10px;
+}
+
+/* Facilities Page Styles */
+.facilities img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facilities h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contact Form Styles */
+#contactForm {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm .form-label {
+    font-weight: bold;
+}
+
+#contactForm .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 
