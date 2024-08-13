@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <style>
-        /* Style for the calculator */
-        .calculator {
-            width: 250px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="button"] {
-            width: 50px;
-            height: 50px;
-            margin: 5px;
-            font-size: 20px;
-        }
-    </style>
+    <title>School Name - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="calculator">
-        <input type="text" id="display" readonly>
-        <br>
-        <input type="button" value="1" onclick="addToDisplay('1')">
-        <input type="button" value="2" onclick="addToDisplay('2')">
-        <input type="button" value="3" onclick="addToDisplay('3')">
-        
-        <br>
-        <input type="button" value="4" onclick="addToDisplay('4')">
-        <input type="button" value="5" onclick="addToDisplay('5')">
-        <input type="button" value="6" onclick="addToDisplay('6')">
-       
-        <br>
-        <input type="button" value="7" onclick="addToDisplay('7')">
-        <input type="button" value="8" onclick="addToDisplay('8')">
-        <input type="button" value="9" onclick="addToDisplay('9')">
-    
-        <br>
-        <input type="button" value="C" onclick="clearDisplay()">
-        <input type="button" value="0" onclick="addToDisplay('0')">
-        <input type="button" value="=" onclick="calculate()">
-        
-        <br>
-        <input type="button" value="+" onclick="addToDisplay('+')">
-        <input type="button" value="-" onclick="addToDisplay('-')">
-        <input type="button" value="*" onclick="addToDisplay('*')">
-        <input type="button" value="/" onclick="addToDisplay('/')">
-    </div>
+    <!-- Header and Navigation -->
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h3">School Name</h1>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="location.html">Location</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="admission.html">Admission</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="facilities.html">Facilities</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <script>
-        function addToDisplay(value) {
-            document.getElementById('display').value += value;
-        }
+    <!-- Hero Section -->
+    <section class="hero bg-light text-center py-5">
+        <div class="container">
+            <h2>Welcome to School Name</h2>
+            <p>Our mission is to nurture young minds and empower them with knowledge, values, and skills for the future.</p>
+            <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+        </div>
+    </section>
 
-        function clearDisplay() {
-            document.getElementById('display').value = '';
-        }
+    <!-- Overview Section -->
+    <section class="overview py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3>Our Facilities</h3>
+                    <p>We provide state-of-the-art facilities including modern classrooms, laboratories, and sports amenities.</p>
+                    <a href="facilities.html" class="btn btn-outline-primary">Explore Facilities</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Admission Process</h3>
+                    <p>Join our vibrant community! Learn about our easy and transparent admission process.</p>
+                    <a href="admission.html" class="btn btn-outline-primary">Admission Procedure</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Upcoming Events</h3>
+                    <p>Stay updated on our upcoming school events and activities.</p>
+                    <a href="events.html" class="btn btn-outline-primary">View Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        function calculate() {
-            var expression = document.getElementById('display').value;
-            var result = eval(expression);
-            document.getElementById('display').value = result;
-        }
-    </script>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 School Name. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@schoolname.com" class="text-white">info@schoolname.com</a> | Phone: +123 456 7890</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Custom JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
